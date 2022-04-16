@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 300,
                 )),
             Positioned(
-              bottom: size.height * 0.15,
+              bottom: size.height * 0.1,
               left: 0,
               right: 0,
               child: Column(
@@ -47,14 +47,14 @@ class _LoginPageState extends State<LoginPage> {
                   Image.asset(AppImages.logomini),
                   Padding(
                     padding:
-                        const EdgeInsets.only(top: 20, left: 70, right: 70),
+                        const EdgeInsets.only(top: 30, left: 70, right: 70),
                     child: Text('Organize seus boletos em um só lugar',
                         textAlign: TextAlign.center,
                         style: TextStyles.titleHome),
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.only(top: 20, left: 40, right: 40),
+                        const EdgeInsets.only(top: 40, left: 40, right: 40),
                     child: SocialLoginButton(onTap: () {
                       print('clicked');
                     }),
