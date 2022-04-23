@@ -1,3 +1,4 @@
+import 'package:bank_project/shared/auth/auth.controller.dart';
 import 'package:bank_project/shared/themes/app_images.dart';
 import 'package:bank_project/shared/themes/appcolors.dart';
 import 'package:flutter/material.dart';
@@ -7,6 +8,8 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final authControler = AuthController();
+    authControler.currentUser(context);
     return Scaffold(
       backgroundColor: AppColors.background,
       body: Stack(children: [
